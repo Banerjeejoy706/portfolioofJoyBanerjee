@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.sidebar{
+    background-color: rgba(0, 0, 0, 0.355);
+    /* width: 12vw; */
+    height: 100vh;
+    font-family: 'Roboto Slab', serif;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+}
+.sidebar nav{
+    padding: 26px;
+}
+.sidebar li{
+    list-style: none;
+    font-size: 25px;
+    padding: 20px 0px;
+}
+.sidebar li a{
+    text-decoration: none;
+    /* color: rgb(128, 15, 71); */
+    color: rgb(0, 0, 0);
+}
+.sidebar li a:hover{
+    color: azure;
+}
+.sidebargo{
+    transform: translate(-243px,0px);
+    position: absolute;
+}
+.main{
+    background-color: rgba(35, 120, 141, 0.388);
+    width: 100vw;
+    height: 100vh;
+}
+.hamburger{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.cross{
+    margin-left: 135px;
+}
+.container{
+    display: flex;
+}
+.infocontainer{
+    height: 80vh;
+    width: 70vw;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.devinfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto Slab', serif; 
+    font-size: 2.5rem;   
+}
+.devinfo .hello{
+    font-family: 'Caveat', cursive;
+}
+.devinfo .name{
+    font-family: 'Roboto Mono', monospace;
+}
+.devinfo .about{
+    margin-left: 62px;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 2rem;
+}
+.devinfo button{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    background-color: blue;
+    color: lightgoldenrodyellow;
+    border: 1px;
+    border-radius: 15px;
+    padding: 6px;
+    margin-top: 33px;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+}
+.devinfo button:hover{
+    background-color: whitesmoke;
+    color: blue;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6);
+}
+.devpic img{
+    height: 75vh;
+}
+.contactform{
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 280px; */
+    align-items: center;
+    /* padding: 50px; */
+    font-family: 'Roboto Mono', monospace;
+}
+.form-label{
+    font-size: 1.4rem;
+    padding: 4px;
+    color: rgb(10, 48, 83);
+    /* margin-left: 200px; */
+    /* box-shadow: 0px 0.3px 0px rgba(80, 26, 124, 0.787); */
+}
+.form-text, .form-check-label{
+    color: rgb(10, 48, 83);
+    font-weight: 500;
+}
+.contactheading{
+    font-family: 'Kanit', sans-serif;
+    margin: 30px 0px;
+    font-size: 2.9rem;
+    color: rgb(11, 132, 173);
+    /* box-shadow: 0px 0.3px 0px rgba(80, 26, 124, 0.787); */
+}
+.mb-3{
+    padding: 4px;
+}
+.form-control{
+    padding: 10px;
+    border: 1px;
+    border-radius: 18px;
+    margin: 10px;
+    width: 400px;
+}
+.submit{
+    margin-left: 250px;
+}
+.contactform .btn{
+    margin-top: 35px;
+    padding: 8px;
+    border: 1px;
+    border-radius: 15px;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(6, 54, 38);
+    background-color: whitesmoke;
+    font-size: large;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+}
+.contactform .btn:hover{
+    background-color: lightgoldenrodyellow;
+    color: blue;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+}
+.introcontainer{
+    padding: 50px;
+}
+.aboutintro{
+    /* font-family: 'Fuzzy Bubbles', cursive; */
+    font-family: 'Roboto Slab', serif;
+    color: goldenrod;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.intro{
+    /* font-family: 'Fuzzy Bubbles', cursive; */
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+    color: rgb(209, 21, 65);
+}
+.social{
+    margin-top: 200px;
+    display: flex;
+}
+.social a{
+    text-decoration: none;
+    margin: auto;
+}
+.social img{
+    width: 30px;
+}
+@media (max-width: 1200px) {
+    /* .main{
+        height: 500vh;
+        width: 100vw;
+    } */
+    /* .sidebar{
+        transform: translate(-243px,0px);
+        position: absolute;
+    } */
+    .devpic img{
+        height: 40vh;
+        padding: 200px 0px;
+        padding-left: 50px;
+    }
+    /* .infocontainer{
+        padding: 0px;
+        margin: 0px;
+    } */
+    .devinfo{
+        /* margin-left: 200px;
+        margin-top: 100px; */
+    }
+    .intro{
+        font-size: 1.5rem;
+    }
+    
+}
+@media (min-width: 500px) and (max-width: 600px){
+    .main{
+        height: 100vh;
+        width: 100vw;
+    }
+    /* .sidebar{
+        transform: translate(-243px,0px);
+        position: absolute;
+    } */
+    .devpic img{
+        height: 20vh;
+        padding: 200px 0px;
+        padding-left: 50px;
+    }
+    .infocontainer{
+        padding: 0px;
+        margin: 0px;
+    }
+    .devinfo{
+        margin-left: 200px;
+        margin-top: 100px;
+    }
+    .intro{
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 600px) and (max-width: 800px){
+    .main{
+        height: 100vh;
+        width: 100vw;
+    }
+    /* .sidebar{
+        transform: translate(-243px,0px);
+        position: absolute;
+    } */
+    .devpic img{
+        height: 25vh;
+    }
+    .infocontainer{
+        padding: 0px;
+        margin: 0px;
+        /* width: 80vw; */
+    }
+    .devinfo{
+        margin-left: 180px;
+        margin-top: 100px;
+    }
+    .intro{
+        font-size: 1.4rem;
+    }
+}
+@media(max-width: 500px){
+    .main{
+        height: 150vh;
+        width: 100vw;
+    }
+    /* .sidebar{
+        transform: translate(-243px,0px);
+        position: absolute;
+    } */
+    .devpic img{
+        height: 30vh;
+        padding: 200px 0px;
+        padding-left: 50px;
+    }
+    .infocontainer{
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .devinfo{
+        margin-left: 200px;
+        margin-top: 100px;
+    }
+    .intro{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 700px){
+    .form-control{
+        width: 100px;
+    }
+}
+@media (min-width: 1900px){
+    .intro{
+        font-size: 2.4rem;
+    }
+}
